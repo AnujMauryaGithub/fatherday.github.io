@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Father's Day</title>
+    <script>
+ function myfunction(){
+   document.getElementById('giftclose').style.display="none";
+   document.getElementById('giftopen').style.display="block";
+   document.getElementById('text1').style.display="none";
+   document.getElementById('text2').style.display="block";
+   document.body.style.backgroundImage = "url('bg.gif')";
+   document.body.style.backgroundPosition = "relaive";
+   document.body.style.zIndex = "500";
+ }
+    </script>
+    <style>
+h1{
+    font-family: cursive;
+}
+.closetext{
+    text-align: center;
+    margin-top: 14rem;
+    font-weight: 700;
+    text-shadow: -1px -1px 23px rgba(255, 255, 0, 1);
+}
+.close{
+    text-align: center;
+}
+.close img{
+    cursor: pointer;
+}
+#giftopen{
+    display: none;
+}
+#text2{
+    display: none;
+}
+.open img{
+    background: transparent;
+}
+
+    </style>
+</head>
+<body>
+    <div class="closetext">
+        <h1 id="text1">अंदर का उपहार देखने के लिए डिब्बे पर क्लिक करें 😃</h1>
+        <h1 id="text2">आपको फादर्स डे की हार्दिक शुबकामनाएं।😊😊😊 </h1>
+    </div>
+    <div class="close">
+        <img src="gift.gif" alt="" onclick="myfunction()" id="giftclose">
+    </div>
+    <div class="open" style="text-align: center;">
+        <img src="gift1.gif" alt="" id="giftopen" style="width: 300px;margin-left: 20px;background: transparent;"> 
+    </div>
+</body>
+</html>
